@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div >
+        <div id="head"><span class="white">CALCULATOR</span></div>
+        <div id="display"><input placeholder="I'm here to help you" ></div>
+        <div id="button-set">
+            <table>
+                <tr>
+                    <td onClick="clearall()">AC</td>
+                    <td onClick="signShift()">+/-</td>
+                    <td onClick="operator('%')">%</td>
+                    <td onClick="operator('/')" class="red-back white">/</td>
+                </tr>
+                <tr>
+                    <td onClick="addcont(7)">7</td>
+                    <td onClick="addcont(8)">8</td>
+                    <td onClick="addcont(9)">9</td>
+                    <td onClick="operator('*')" class="red-back white">*</td>
+                </tr>
+                <tr>
+                    <td onClick="addcont(4)">4</td>
+                    <td onClick="addcont(5)">5</td>
+                    <td onClick="addcont(6)">6</td>
+                    <td onClick="operator('-')" class="red-back white">-</td>
+                </tr>
+                <tr>
+                    <td onClick="addcont(1)">1</td>
+                    <td onClick="addcont(2)">2</td>
+                    <td onClick="addcont(3)">3</td>
+                    <td onClick="operator('+')" class="red-back white">+</td>
+                </tr>
+                <tr>
+                    <td onClick="addcont(0)" colspan="2">0</td>
+                    <td onClick="decimal('.')">.</td>
+                    <td onClick="result()" class="red-back white">=</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

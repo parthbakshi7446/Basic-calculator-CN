@@ -1,0 +1,87 @@
+html{
+    padding:0px;
+    margin:0px;
+}
+
+/* general */
+.white{
+    color:white;
+}
+.black{
+    color: black;
+}
+.flex{
+    display: flex;
+}
+.red-back{
+    background-color: RGB(128,0,0) !important;
+}
+/* calculator part */
+body{
+    width:100vw;
+    height:100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body>div{
+    width:40vw;
+    height:70vh;
+    background-color: gray;
+    min-width:250px;
+    min-height:400px;
+    padding:1%;
+    /* margin: 1px; */
+}
+#head{
+    background-color: black;
+    margin: auto;
+    /* width:95%; */
+    display: flex;
+    height:9%;
+    justify-content: center;
+    align-items: center;
+}
+#head span{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+#display{
+    /* background-color: whitesmoke; */
+    margin-top: 2%;
+    /* width:95%; */
+    height:20%;
+    font-size: 150%;
+}
+#display input{
+    width:99.5%;
+    text-align: right;
+    height:100%;
+    font-size: inherit;
+    background-color: whitesmoke;
+    display: flex;
+    border: none;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#button-set{
+    background-color: grey;
+    height:65%;
+    margin-top: 2%;
+}
+#button-set table{
+    width: 100%;
+    border-collapse: unset;
+    height: 100%;
+}
+#button-set table tr td{
+    background-color: white;
+    font-size: 1.7rem;
+    /* display:flex; */
+    text-align: center
+    /* justify-content: center; */
+}
+
